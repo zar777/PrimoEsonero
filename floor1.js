@@ -56,4 +56,6 @@ var h1 = [540,265];
 var parcentr2 = POLYLINE([u,f1,g1,h1]);
 
 var montaggio = STRUCT([latonord1,latosud1,rettsud,parcentr1,parcentr2]);
-DRAW(montaggio);
+
+var alzomuri = EXTRUDE([126])(montaggio);
+DRAW(alzomuri);
