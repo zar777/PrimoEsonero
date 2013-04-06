@@ -23,6 +23,6 @@ var fine3 = STRUCT(REPLICA(3)([finestra3d,T([1])([120])]));
 
 var findoppie = STRUCT(REPLICA(2)([fine3,T([0])([60])]));
 
+var colored = COLOR([0,0,0])(findoppie);
 
-
-DRAW(findoppie);
+DRAW(colored);
