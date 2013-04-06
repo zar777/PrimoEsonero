@@ -6,9 +6,7 @@ var z4 = [450,470];
 var finestra2d = POLYLINE ([z1,z2,z4,z3,z1]);
 var finestra3d = EXTRUDE([9])(finestra2d);
 
-
-
 var fine3 = STRUCT(REPLICA(3)([finestra3d,T([1])([120])]));
 
-
-DRAW(fine3);
+var findoppie = STRUCT(REPLICA(2)([fine3,T([0])([60])]));
+DRAW(findoppie);
